@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  contactapi:"http://localhost:3000/contact",
+  userapi:"http://localhost:3000/users",
 };
 
 /*

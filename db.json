@@ -1,0 +1,54 @@
+{
+  "contact": [
+    {
+      "Name": "john",
+      "mail": "pallavikatari@gmail.com",
+      "Phone": 994848834,
+      "Message": "bad product"
+    }
+  ],
+  "users": [
+    {
+      "firstname": "Ramya",
+      "lastname": "Shree",
+      "useremail": "ramyashree1301@gmail.com",
+      "password": "",
+      "id": 1
+    },
+    {
+      "firstname": "Ramya",
+      "lastname": "shree",
+      "useremail": "ramyashree1301@gmail.com",
+      "password": "",
+      "id": 2
+    },
+    {
+      "firstname": "Ramya",
+      "lastname": "shree",
+      "useremail": "ramyashree1301@gmail.com",
+      "password": "Ramya@123",
+      "id": 3
+    },
+    {
+      "firstname": "vvb",
+      "lastname": "vvc",
+      "useremail": "tt@gmail.com",
+      "password": "tt123",
+      "id": 4
+    },
+    {
+      "firstname": "vvb",
+      "lastname": "vvc",
+      "useremail": "shree@gmail.com",
+      "password": "123456",
+      "id": 5
+    },
+    {
+      "firstname": "Pooja",
+      "lastname": "G",
+      "useremail": "tt123@gmail.com",
+      "password": "123456",
+      "id": 6
+    }
+  ]
+}

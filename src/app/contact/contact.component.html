@@ -1,0 +1,89 @@
+<!-- <h1 style="font-size: 30px;text-align:center;font-weight: 400;margin-top:30px">Contact us</h1><br>
+<p style="text-align:center;font-weight: 470;">We'll get back to you as soon as we can <br> care@heartyculturenursery.com</p>
+
+  <form class="row g-3">
+    <div class="col-md-6">
+    <label for="inputName" class="form-label" ></label>
+    <input type="text" class="form-control" id="inputCity" placeholder="Name">
+  </div>
+    <div class="col-md-6" id="some">
+      <label for="inputEmail4" class="form-label"></label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+    </div>
+    <div class="col-12">
+      <label for="inputphone" class="form-label"></label>
+      <input type="text" class="form-control" id="inputPhone" placeholder="Phone number">
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Message</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-warning">Send</button>
+    </div>
+  </form> -->
+
+  <div class="mt-5">
+    
+    <div class="col-md-12 min-vh-100 d-flex flex-column">
+        <div class="login-form">
+<form class="mt-5" [formGroup]="registerForm" (ngSubmit)="submitHandler()">
+    
+    <div class="container" >
+        
+      <h1 style="font-size: 30px;text-align:center;font-weight: 400;margin-top:30px">Contact us</h1>
+      <p style="text-align:center;font-weight: 470;">We'll get back to you as soon as we can <br> care@heartyculturenursery.com</p>
+      <div class="form-group">
+        
+        <input type="text" class="form-control" name="Name" formControlName="username"
+            placeholder="Name">
+        <label class="error ng-binding" *ngIf="submitted && f['username'].invalid">Name is required
+        </label>
+    </div>
+  <br>
+    <div class="form-group">
+        <input type="email" class="form-control" name="Email" formControlName="useremail"
+            placeholder="Email">
+        <label class="error ng-binding" *ngIf="submitted && f['useremail'].invalid">Email is required
+            </label>
+        <label class="error ng-binding" *ngIf="submitted && f['useremail'].errors?.['useremail']">Email must
+            be a
+            valid email address</label>
+    </div>
+  <br>
+<br>
+<div class="form-group">
+    <input type="text" class="form-control" name="Phone" formControlName="mobile"
+        placeholder="Phone">
+    <label class="error ng-binding" *ngIf="submitted && f['mobile'].errors?.['required']">Mobile number
+        is
+        required</label>
+
+</div>
+<br>
+<div class="form-group">
+        
+    <input type="text" class="form-control" name="Message" formControlName="username"
+        placeholder="Message">
+</div>
+
+     
+  
+  <br>
+    <button type="submit" class="btn btn-warning">Send</button>
+    <div class="text-center ms-mt-x ms-mb-m register-already-account" style="padding-top:30px">
+        <span style="color:white;" class="ms-fs-12 ng-binding">
+        </span>
+    </div>
+</div>
+  </form>
+  <form class="row g-3">
+    <div class="col-md-6">
+    <label for="inputName" class="form-label" ></label>
+    <input type="text" class="form-control" id="inputCity" placeholder="Name">
+  </div>
+    <div class="col-md-6" id="some">
+      <label for="inputEmail4" class="form-label"></label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+    </div>
+    </form>

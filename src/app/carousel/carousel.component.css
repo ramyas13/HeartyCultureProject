@@ -1,0 +1,232 @@
+img{
+    height:500px;
+  }
+  /*access the style through class attribute*/
+  .stylebinding1 {
+    color: red;
+    background-color: beige;
+  }
+  
+  /*Class for retrieving details from ProductDetails using *ngFor and *ngSwitchCase*/
+  .red {
+    color: red;
+  }
+  
+  .green {
+    color: green;
+  }
+  
+  .yellow {
+    color: yellow;
+  }
+  /*Styling using ngClass*/
+  .blue{
+    color:blue;
+  }
+  .shadow{
+    text-shadow: 2px 2px 2px rgb(255, 230, 0);
+  }
+  .size{
+    font-size: 18px;
+  }
+  .text{
+    font-size:30px;
+    font-weight: bold;
+  }
+  .text1{
+    font-size:30px;
+    font-weight: bold;
+    color:white;
+    margin-top:50px;
+    
+  }
+  .next{
+    text-align: center;
+  }
+  .next1{
+    width: 150px;
+    height: 100px;
+    
+  }
+  .marquee{
+    font-size: 60px;
+    color:brown;
+    font-weight: bold;
+  }
+  .coupon {
+    border: 5px dotted #bbb; /* Dotted border */
+    width: 80%;
+    border-radius: 15px; /* Rounded border */
+    margin: 0 auto; /* Center the coupon */
+    max-width: 600px;
+  }
+  
+ 
+  
+  .promo {
+    background: white;
+    padding: 3px;
+  }
+  
+  .expire {
+    color: red;
+  }
+  *{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text{
+    padding:40px;
+    background:#eee;
+}
+
+.text h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    padding:10px;
+}
+
+.banner-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-container .banner{
+    background:linear-gradient(-55deg, #f5e1af 29%, #f5e1af 29.1%, #f5e1af 68%, #f5e1af 68.1%);
+    border-radius: 5px;
+    height: 380px;
+    margin:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0 5px 10px #0005;
+    overflow: hidden;
+}
+
+.banner-container .banner .shoe{
+    flex:1 1 250px;
+    padding:15px;
+    text-align: center;
+}
+
+.banner-container .banner .shoe img{
+    width:100%;
+}
+
+.banner-container .banner .content{
+    flex:1 1 250px;
+    text-align: center;
+    padding:10px;
+    text-transform: uppercase;
+}
+
+.banner-container .banner .content span{
+    color:#eee;
+    font-size: 25px;
+}
+
+.banner-container .banner .content h3{
+    color:#fff;
+    font-size: 40px;
+}
+
+.banner-container .banner .content p{
+    color:#eee;
+    font-size: 20px;
+    padding:10px 0;
+}
+
+.banner-container .banner .content .btn{
+    display: block;
+    height:40px;
+    width:150px;
+    line-height: 40px;
+    background: #fff;
+    color:#d63031;
+    margin:5px auto;
+    text-decoration: none;
+}
+
+.banner-container .banner .women{
+    flex:1 1 250px;
+    padding:15px;
+    text-align: center;
+}
+
+.banner-container .banner .women img{
+    width:100%;
+    height: 350px;
+}
+
+@media (max-width:768px){
+    .banner-container .banner .women{
+        display: none;
+    }
+}
+
+.imgcollage {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+}
+.col-lg-6{
+  display:grid;
+  /* declares how many columns there will automaticaly be and how big they will be +rows and how big of a gap between them*/
+  grid-template-columns: 250px 250px;
+  grid-template-rows: 250px 250px;
+  grid-gap: 15px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row > div[class*='col-'] {
+ display: flex;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+
+
+
